@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="ktu-logo-lt-pilnas" size="10.000000 5.633333" />
+    <ImageTarget name="ktu-logo-en-full" size="10.000000 5.758333" />
+    <ImageTarget name="ktu-ikona" size="10.000000 10.964912" />
+    <ImageTarget name="Maze" size="10.000000 10.032362" />
+  </Tracking>
+</QCARConfig>
