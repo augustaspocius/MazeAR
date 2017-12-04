@@ -7,26 +7,26 @@ public class BallMovementController : MonoBehaviour {
 
     //public GameObject plane;
     //float speed = 5f;
-    Rigidbody ball;
 
-	// Use this for initialization
-	void Start () {
-	    ball = this.GetComponent<Rigidbody>();
+    Rigidbody2D ball;
+    float lockPos = 0;
 
-	}
+    // Use this for initialization
+    void Start () {
+	    ball = this.GetComponent<Rigidbody2D>();
+        //ball.transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
+    }
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    float x = CrossPlatformInputManager.GetAxis("Horizontal");
+        float x = CrossPlatformInputManager.GetAxis("Horizontal");
+        //print(x);
 	    float y = CrossPlatformInputManager.GetAxis("Vertical");
+	    //print(y);
 
-        Vector3 movement = new Vector3(x, 0, y);
-        
-	    ball.velocity = movement * 10f;
-	    if (x != 0 && y != 0)
-	    {
-	        transform.eulerAngles = new Vector3(transform.eulerAngles.x,Mathf.Atan2(x,y) * Mathf.Rad2Deg,transform.eulerAngles.z);
-	    }
+        Vector3 movement = new Vector3(x, 0f, y);
+	    //ball.transform.right = null;
+
     }
 }
