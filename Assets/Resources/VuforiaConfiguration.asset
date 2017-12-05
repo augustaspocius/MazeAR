@@ -8,15 +8,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: ASRz077/////AAAAGcRTb1BcUkPkpNGpbhDXHAsRHB1LmQ1Q7sfWEmyl9PmKD+Bix1Y7ruzoRBDw5Q2B8Cl9J26uWu0J1/u/3MAqnqEMNNZQA0ZWYTm6gS4EdulqnSaO+esLPhAg+603tOOl018ZAVsYpV0EMdQRXM4GkeTdeBDJKTrapiyfwCQaCVk97hb07oxezhqpBhJBlBgWJcFm7xRv2v+Pg1zluA72rdUx2/sKJu8Nk+dlXwRtkMp7Bg04Lr5lZfRZWnL+2b0/QRhRypCKk2+DRTQWUQdjyxhWO47UZ2qQfbDruWFL2iQt2y6L1R2ezPtF/Wu74P4g/LAZrYLUz/w+YVgRI4lG5cr9c27gcqJzUjpAbU6lgVSU
-    ufoLicenseKey: QWJUV05ibi8vLy8vQUFBQUtKYXB2blBwbFVObGtiVFRGTld6RGRaQTk1WG9MTE5xNDhKZjdjRzd4MnR2UWMzb0daaEtkcHU1WWdHam54ZUxmN3dWSlpTRDc5UmdmckhjckhtTzFaVlZMU1VzUlY2V1lnMThsZCswbVV5RmhNS1dhZ3VFTU5ZSjhOSGpISlZTUDVUZ3pWd3QrQytyQUthUE93aUFqaFZsdWJ4ZWFaL01YeUVYSlBoYStsTTRCZUt3UFlna29GUXBvaUpKeEt3YXJxTFlJSTdVdHFQT2lLVHVOYWlzeS9mRWtqbXdHMnNjU2ptWDlMYm5aeGFoRldLciswWlpRTkc1ams0M3piT3RLWlZabStnbmFGdVFwUUlyMFgyZWd6LzNENktsaHdpZWlYeVBzN1hUckh4SnRta0FUdnRTaGFIWWR2Y0M5VXRjQ3U3UlBwd2ptNEFnVTUyZ3U1SFYrbkZ1MkJSeUtWNHU1NmJRdFBISXJnZWg=
+    ufoLicenseKey: QWN1UVVNci8vLy8vQUFBQUtFL2ZYb0JSUmtIYmxuNDdIejAzbW9pSW1pSGdLWG9oY2Q0ZXJqZ0RraXc4VVdoRDZ5eWk5T3czZGhRUXRGYS9ybTYxak52dkpVS3dNTmR3c01QbHdML0tpdUt4TWVmNEJyNys5djRBSGI2cHp0TUNvSVVFK0x2blQ1a1BwTDRRb3N0dWkvbWJCUmZ0RjYvNUNYN0FQZXc5QmhQa1o5c3E0S0V1TDZ0aEQ5YjFIbDNaUEdhT2FINjVVTjlLcWMyWG9Ma3RBdTYzV3JnWE1KU0plRzRBU0M3YVRpeHZ4eFVnRUdQUzZNU2JCTDl2WlkxN2NhMUFpVVBkQldmWExQUFJwek5DYmg5TC84bHBkNGRTRDVFdkh2S1pYdnpoLzNFREFpUEJ5aFNBeFlWODk0NXpkYlNPM3UxVHhTaGkxTk1teXpjNk9jNEVKdzNBcGtZaHM1N3VxUmJ5TzcrZ0RkdUkyL2xSTDBLSURkdWQ=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 4
+    maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
     autoInitBuilder: 0
-    sceneUnitsToMillimeter: 1000
+    sceneUnitsToMillimeter: 0
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   webcam:
-    deviceNameSetInEditor: Logitech Camera
+    deviceNameSetInEditor: 
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30

@@ -9,8 +9,6 @@ public class BallMovementController : MonoBehaviour {
     //float speed = 5f;
 
     Rigidbody2D ball;
-    float lockPos = 0;
-
     // Use this for initialization
     void Start () {
 	    ball = this.GetComponent<Rigidbody2D>();
@@ -25,7 +23,7 @@ public class BallMovementController : MonoBehaviour {
 	    float y = CrossPlatformInputManager.GetAxis("Vertical");
 	    //print(y);
 
-        Vector3 movement = new Vector3(x, 0f, y);
+        //Vector3 movement = new Vector3(x, 0f, y);
 	    //ball.transform.right = null;
 
     }

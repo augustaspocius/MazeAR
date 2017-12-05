@@ -29,7 +29,7 @@ public class StartOptions : MonoBehaviour {
 	{
 		//Get a reference to ShowPanels attached to UI object
 		showPanels = GetComponent<ShowPanels> ();
-
+        showPanels.ShowMenu();
 		//Get a reference to PlayMusic attached to UI object
 		playMusic = GetComponent<PlayMusic> ();
 	}
@@ -53,13 +53,16 @@ public class StartOptions : MonoBehaviour {
 
 			//Set the trigger of Animator animColorFade to start transition to the FadeToOpaque state.
 			animColorFade.SetTrigger ("fade");
-		} 
+		}
 
 		//If changeScenes is false, call StartGameInScene
 		else 
 		{
-			//Call the StartGameInScene function to start game without loading a new scene.
-			StartGameInScene();
+
+            //Destroy(this.gameObject);
+		
+            //Call the StartGameInScene function to start game without loading a new scene.
+            StartGameInScene();
 		}
 
 	}
@@ -91,10 +94,16 @@ public class StartOptions : MonoBehaviour {
 		inMainMenu = false;
 
 		//Hide the main menu UI element
-		showPanels.HideMenu ();
-
+	    if (sceneToStart != 0)
+	    {
+	        showPanels.HideMenu();
+	    }
 		//Load the selected scene, by scene index number in build settings
 		SceneManager.LoadScene (sceneToStart);
+	    if (sceneToStart == 0)
+	    {
+	        showPanels.ShowMenu();
+	    }
 	}
 
 	public void HideDelayed()

@@ -24,7 +24,7 @@ namespace UnityStandardAssets.Vehicles.Ball
 
         private void Update()
         {
-            if (m_Rigidbody.transform.position.y < 0)
+            if (m_Rigidbody.transform.position.y < -10)
             {
                 m_Rigidbody.transform.position = new Vector3(spawn.transform.position.x, spawn.transform.position.y, spawn.transform.position.z);
             }
